@@ -33,6 +33,7 @@
 
 .rc-slider-rail {
   height: 8px;
+  background-color: aquamarine;
 }
 
 .rc-slider-handle,
