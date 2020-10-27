@@ -31,7 +31,7 @@ class Navbar extends Component {
     return (
       <header className='Navbar'>
         <div className="logo">
-          <a href="/">reactcolorpicker</a>
+          <a href="/">Color Picker</a>
         </div>
         <div className="slider-container">
           <span>Level: {level}</span>
@@ -47,7 +47,7 @@ class Navbar extends Component {
           </Select>
         </div>
         <Snackbar 
-          anchorOrigin={{vertical: 'top', horizontal: 'right'}} 
+          anchorOrigin={{vertical: 'top', horizontal: 'center'}} 
           open={open} 
           autoHideDuration={3000} 
           message={<span id='message-id'>Format Changed To {format.toUpperCase()}</span>}
