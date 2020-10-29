@@ -27,9 +27,11 @@ class App extends Component {
             />
           )} 
         />
-        {/* <div>
-          <Palette palette={generatePalette(seedColors[4])}/>
-        </div> */}
+        <Route 
+          exact
+          path='/palette/:paletteId/:colorId' 
+          render={() => <h1>SINGLE COLOR PAGE</h1>}
+        />
       </Switch>
     );
   }
