@@ -9,14 +9,17 @@ class ColorBox extends Component {
     this.state = { copied: false };
     this.changeCopyState = this.changeCopyState.bind(this);
   }
+
   changeCopyState() {
     this.setState({ copied: true }, () => {
       setTimeout(() => this.setState({ copied: false }), 1500);
     });
   }
+
   render() {
     const { name, background, moreUrl, showLink } = this.props;
     const { copied } = this.state;
+
     return (
       <CopyToClipboard text={background} onCopy={this.changeCopyState}>
         <div style={{ background }} className='ColorBox'>
@@ -44,4 +47,5 @@ class ColorBox extends Component {
     );
   }
 }
+
 export default ColorBox;

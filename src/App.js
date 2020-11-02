@@ -12,6 +12,7 @@ class App extends Component {
       return palette.id === id;
     });
   }
+  
   render() {
     return (
       <Switch>
